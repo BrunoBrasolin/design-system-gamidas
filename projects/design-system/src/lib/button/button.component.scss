@@ -1,0 +1,33 @@
+@use "sass:map";
+@use '..//scss' as *;
+
+.gamidas-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 1rem;
+
+  @each $name, $color in $cyberpunk-theme {
+    &.#{$name} {
+      @if $name =='yellow' or $name =='green' {
+        color: map.get($cyberpunk-theme, 'dark-gray');
+      }
+
+      @else {
+        color: map.get($cyberpunk-theme, 'white');
+      }
+
+      background-color: map.get($cyberpunk-theme, $name);
+      box-shadow: 0 0 8px map.get($cyberpunk-theme, '#{$name}-neon');
+
+      &:hover {
+        background-color: map.get($cyberpunk-theme, '#{$name}-hover');
+        box-shadow: 0 0 15px map.get($cyberpunk-theme, '#{$name}-neon'),
+        0 0 20px map.get($cyberpunk-theme, '#{$name}-neon');
+      }
+    }
+  }
+}

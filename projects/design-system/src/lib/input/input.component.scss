@@ -1,0 +1,20 @@
+@use "sass:map";
+@use '..//scss' as *;
+
+.gamidas-input,
+.gamidas-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: map.get($cyberpunk-theme, 'input-bg');
+  border: 2px solid map.get($cyberpunk-theme, 'border');
+  border-radius: 8px;
+  color: map.get($cyberpunk-theme, 'light-text');
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s ease, border 0.3s ease;
+
+  &:focus {
+    background-color: map.get($cyberpunk-theme, 'black');
+    border-color: map.get($cyberpunk-theme, 'neon-blue');
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "@gamidas/design-system",
+  "version": "0.0.1",
+  "description": "Design System para os sistemas do Gamidas.",
+  "keywords": [
+    "angular",
+    "design-system",
+    "ui",
+    "components",
+    "gamidas"
+  ],
+  "author": "Bruno Brasolin <brunobrasolinc@gmail.com>",
+  "license": "MIT",
+  "homepage": "gamidas.dev.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunobrasolin/design-system-gamidas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brunobrasolin/design-system-gamidas/issues"
+  },
+  "main": "bundles/design-system.umd.js",
+  "module": "fesm2022/design-system.mjs",
+  "es2022": "fesm2022/design-system.mjs",
+  "esm2022": "esm2022/design-system.mjs",
+  "types": "design-system.d.ts",
+  "exports": {
+    ".": {
+      "types": "./design-system.d.ts",
+      "default": "./bundles/design-system.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "ng build @gamidas/design-system",
+    "test": "ng test @gamidas/design-system",
+    "lint": "ng lint @gamidas/design-system",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

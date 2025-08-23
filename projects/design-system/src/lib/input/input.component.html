@@ -1,0 +1,26 @@
+<div class="form-group">
+  <ng-container [ngSwitch]="type()">
+    <textarea
+      class="gamidas-textarea"
+      *ngSwitchCase="'textarea'"
+      [id]="id()"
+      [name]="name()"
+      [required]="required()"
+      [value]="modelValue()"
+      (input)="handleInput($event)"
+      (blur)="onTouched()"
+    ></textarea>
+
+    <input
+      *ngSwitchDefault
+      class="gamidas-input"
+      [type]="type()"
+      [id]="id()"
+      [name]="name()"
+      [required]="required()"
+      [value]="modelValue()"
+      (input)="handleInput($event)"
+      (blur)="onTouched()"
+    />
+  </ng-container>
+</div>

@@ -1,0 +1,57 @@
+// Fonts
+$font: "Jersey 15", serif;
+
+$cyberpunk-theme: (
+  // Primary Colors
+
+  'pink': #ff3f3f,
+  'pink-hover': #ff416c,
+  'pink-neon': #ff007c,
+
+  'blue': #4e8cff,
+  'blue-hover': #4a6be0,
+  'blue-neon': #00ffff,
+
+  'purple': #9b4dff,
+  'purple-hover': #a34cde,
+  'purple-neon': #bf00ff,
+
+  'yellow': #f1e80f,
+  'yellow-hover': #d4c50e,
+  'yellow-neon': #f5ff00,
+
+  'green': #00ff9f,
+  'green-hover': #00e689,
+  'green-neon': #00ff90,
+
+  'teal': #00b5a8,
+  'teal-hover': #00a48f,
+  'teal-neon': #00ffcc,
+
+  'orange': #ff6a00,
+  'orange-hover': #e55a00,
+  'orange-neon': #ff9e00,
+
+  'black': #121212,
+  'black-hover': #1a1a1a,
+  'black-neon': #0d0d0d,
+
+  'dark-gray': #2c2c2c,
+  'dark-gray-hover': #3e3e3e,
+  'dark-gray-neon': #333333,
+
+  'light-gray': #b5b5b5,
+  'light-gray-hover': #9e9e9e,
+  'light-gray-neon': #d0d0d0,
+
+  'white': #f1f1f1,
+  'white-hover': #e6e6e6,
+  'white-neon': #ffffff,
+
+  'light-text': #e0e0e0,
+  'dark-text': #333333,
+  'muted-text': #888888,
+
+  // UI Elements
+  'input-bg': #1d1d1d,
+  'border': #444444)
