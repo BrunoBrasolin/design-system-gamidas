@@ -1,5 +1,5 @@
 {
-  "name": "@gamidas/design-system",
+  "name": "design-system-gamidas",
   "version": "0.0.1",
   "description": "Design System para os sistemas do Gamidas.",
   "keywords": [
@@ -31,9 +31,9 @@
     }
   },
   "scripts": {
-    "build": "ng build @gamidas/design-system",
-    "test": "ng test @gamidas/design-system",
-    "lint": "ng lint @gamidas/design-system",
+    "build": "ng build design-system-gamidas",
+    "test": "ng test design-system-gamidas",
+    "lint": "ng lint design-system-gamidas",
     "prepare": "npm run build"
   },
   "peerDependencies": {
